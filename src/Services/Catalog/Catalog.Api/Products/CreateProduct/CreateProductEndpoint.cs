@@ -8,19 +8,13 @@
     {
         public void AddRoutes(IEndpointRouteBuilder app)
         {
-            app.MapPost("/products", async(CreateProductRequest request, ISender sender) => 
+            app.MapPost("/products", async (CreateProductRequest request, ISender sender) =>
             {
-                try
-                {
-                    var command = request.Adapt<CreateProductCommand>();
-                    var result = await sender.Send(command);
-                    var response = result.Adapt<CreateProductResponse>();
-                    return Results.Created($"/products/{response.Id}", response);
-                }
-                catch(Exception ex)
-                {
-                    return Results.Problem();
-                }
+                var command = request.Adapt<CreateProductCommand>();
+                var result = await sender.Send(command);
+                var response = result.Adapt<CreateProductResponse>();
+                return Results.Created($"/products/{response.Id}", response);
+
             })
               .WithName("CreateProduct")
               .Produces<CreateProductResponse>(StatusCodes.Status201Created)
