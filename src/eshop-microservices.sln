@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B60CB3FD-D5E7-4DA1-91A2-2F2C3EEA35F5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{12FA0524-DDE8-4B22-8014-6CD2C26B0AE1}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Basket\Basket.API\Program.cs = Services\Basket\Basket.API\Program.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Api", "Services\Catalog\Catalog.Api\Catalog.Api.csproj", "{3B0E6EBE-94AE-41FF-9ADE-C1FBE7330BE1}"
 EndProject
@@ -25,13 +28,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{3EAF4B14-E1E2-4089-9500-039D3B523531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{89373789-F080-44B7-A1F6-25EA1F031CFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{89373789-F080-44B7-A1F6-25EA1F031CFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{B2B86D39-33B0-48ED-A0EB-61B449E14B3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{B2B86D39-33B0-48ED-A0EB-61B449E14B3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{B940D1DE-C804-4452-A157-9268F3E068DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{B940D1DE-C804-4452-A157-9268F3E068DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infastructure", "Services\Ordering\Ordering.Infastructure\Ordering.Infastructure.csproj", "{4DB5C5AD-F749-4308-8E58-039FFC702154}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infastructure", "Services\Ordering\Ordering.Infastructure\Ordering.Infastructure.csproj", "{4DB5C5AD-F749-4308-8E58-039FFC702154}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,3 +11,4 @@ namespace Ordering.Domain.Abstractions
         public string EventType => GetType().AssemblyQualifiedName!;
     }
 }
+  

@@ -11,6 +11,7 @@ var assembly = typeof(Program).Assembly;
 
 //Application Services 
 builder.Services.AddCarter();
+
 builder.Services.AddMediatR(config =>
 {
     config.RegisterServicesFromAssemblies(assembly);
