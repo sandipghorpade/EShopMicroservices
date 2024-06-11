@@ -20,7 +20,7 @@ namespace Ordering.Infastructure.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            base.OnModelCreating(builder);
+            base.OnModelCreating(builder);            
         }
 
     }

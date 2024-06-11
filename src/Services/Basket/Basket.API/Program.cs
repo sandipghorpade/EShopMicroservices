@@ -1,4 +1,5 @@
 using BuildingBlocks.Exceptions.Handler;
+using BuildingBlocks.Messaging.MassTransit;
 using HealthChecks.UI.Client;
 using Weasel.Core;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -57,6 +58,8 @@ builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 builder.Services.AddHealthChecks()
                 .AddNpgSql(builder.Configuration.GetConnectionString("Database")!)
                 .AddRedis(builder.Configuration.GetConnectionString("Redis")!);
+
+builder.Services.AddMessageBroker(builder.Configuration);
 
 var app = builder.Build();
 
